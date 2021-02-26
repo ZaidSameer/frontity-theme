@@ -65,6 +65,9 @@ const twentyTwentyTheme = {
             actions.source.fetch("getFeaturedPosts"),
           ]
         );
+        await Promise.all(
+          data.items.map(({link}) => link).map(link => actions.source.fetch(link))
+        );
       },
       init: ({ libraries }) => {              
         libraries.source.handlers.push(getFeaturedPosts);
