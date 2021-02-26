@@ -1,5 +1,5 @@
 const settings = {
-  "name": "najng",
+  "name": "Frontity Blog",
   "state": {
     "frontity": {
       "url": "https://test.frontity.org",
